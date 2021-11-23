@@ -77,7 +77,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${ ({lightDesc}) => ( lightDesc ? '#f7f8fa' : '#010606' ) };
+    color: ${ ({lightDesc}) => ( lightDesc ? '#fff' : '#fff' ) };
 `;
 
 export const BtnWrap = styled.div`

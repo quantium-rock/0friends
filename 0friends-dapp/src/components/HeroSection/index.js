@@ -18,7 +18,7 @@ function HeroSection() {
             </HeroBg>
         
             <HeroContent>
-                <HeroH1> Virtual Banking Made Easy </HeroH1>
+                <HeroH1> Welcome to #0friendsclub </HeroH1>
                 <HeroP>
                     Connect your wallet and start generating profits now
                 </HeroP>
