@@ -1,8 +1,10 @@
 import React from 'react';
+import HorizontalScroll from 'react-scroll-horizontal';
 import { Button } from '../ButtonElements';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Column2, ImgWrap, Img } from './InfoElements';
 
 function InfoSection( {lightBg, id, imgStart, topLine, headline, lightText, lightTextDesc, description, buttonLabel, img, alt, primary, dark, dark2 } ) {
+
     return (
         <InfoContainer lightBg={lightBg} id={id}>
             <InfoWrapper>
@@ -23,8 +25,8 @@ function InfoSection( {lightBg, id, imgStart, topLine, headline, lightText, ligh
                         </ImgWrap>
                     </Column2>
                 </InfoRow>
-            </InfoWrapper>
-        </InfoContainer>
+            </InfoWrapper>    
+        </InfoContainer>  
     );
 };
 

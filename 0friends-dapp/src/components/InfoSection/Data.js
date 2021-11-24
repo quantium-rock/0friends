@@ -1,14 +1,17 @@
+
+import img1 from '../../images/svg-1.svg';
+
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
     topLine: '10 NFT Solana Collection',
-    headline: 'Collect&Trade, Play&Earn with #0friendsclub',
+    headline: 'Collect&Sell, Play&Earn with #0friendsclub',
     description: "Welcome to our #0friendsclub universe! 0fc is a recent creation which arrives to challenge all you´ve seen before. We aim to create one of the first Solana #PlayToEarn plataforms, and we are already in our way. Don't stay behind! ",
     buttonLabel: 'Get started',
     imgStart: false,
-    img: require('../../images/33.png'),
+    img: img1,
     alt: '',
     dark: true,
     primary: true,
@@ -19,7 +22,7 @@ export const homeObjTwo = {
     id: 'about2',
     lightBg: true,
     lightText: false,
-    lightTextDesc: true,
+    lightTextDesc: false,
     topLine: 'collections',
     headline: '10 Different Collections',
     description: 'eeeeo',
