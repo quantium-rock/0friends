@@ -18,12 +18,12 @@ function HeroSection() {
             </HeroBg>
         
             <HeroContent>
-                <HeroH1> Welcome to #0friendsclub </HeroH1>
+                <HeroH1> Virtual Banking Made Easy </HeroH1>
                 <HeroP>
                     Connect your wallet and start generating profits now
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="connect" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true" >
+                    <Button to="services" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
                         Get started { hover ? <ArrowForward /> : <ArrowRight /> }
                     </Button>
                 </HeroBtnWrapper>
