@@ -29,7 +29,7 @@ const Navbar = ({ toggle }) => {
         <IconContext.Provider value={{color:'#fff'}}>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to="/" onClick={toggleHome}>orus</NavLogo>
+                    <NavLogo to="/" onClick={toggleHome}>0friendsclub</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>
@@ -38,13 +38,13 @@ const Navbar = ({ toggle }) => {
                             <NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" offset={-80}>About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="discover" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Discover</NavLinks>
+                            <NavLinks to="rarities" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Rarities</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="services" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Services</NavLinks>
+                            <NavLinks to="gamearn" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Gamearn</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="media" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Media</NavLinks>
+                            <NavLinks to="roadmap" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Roadmap</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>

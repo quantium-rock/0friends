@@ -12,14 +12,14 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink onClick={toggle} to="about">
                         About
                     </SidebarLink>
-                    <SidebarLink onClick={toggle} to="discover">
-                        Discover
+                    <SidebarLink onClick={toggle} to="rarities">
+                        Rarities
                     </SidebarLink>
-                    <SidebarLink onClick={toggle} to="services">
-                        Services
+                    <SidebarLink onClick={toggle} to="gamearn">
+                        Gamearn
                     </SidebarLink>
-                    <SidebarLink onClick={toggle} to="media">
-                        Media
+                    <SidebarLink onClick={toggle} to="roadmap">
+                        Roadmap
                     </SidebarLink>
                     <SideBtnWrap>
                         <SidebarRoute onClick={toggle} to="/connect">Connect Wallet</SidebarRoute>

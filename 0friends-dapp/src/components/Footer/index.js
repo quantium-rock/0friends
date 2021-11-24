@@ -17,9 +17,9 @@ const Footer = () => {
                         <FooterLinkItems>
                             <FooterLinkTitle>Index</FooterLinkTitle>
                             <FooterLink to='about'>About</FooterLink>
-                            <FooterLink to='/discover'>Discover</FooterLink>
-                            <FooterLink to='/services'>Services</FooterLink>
-                            <FooterLink to='/media'>Media</FooterLink>                 
+                            <FooterLink to='rarities'>Rarities</FooterLink>
+                            <FooterLink to='gamearn'>Gamearn</FooterLink>
+                            <FooterLink to='roadmap'>Roadmap</FooterLink>                 
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Community</FooterLinkTitle>
@@ -32,10 +32,10 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Markets</FooterLinkTitle>
-                            <FooterLink to='/www.discord.com/'>Artentic.nft</FooterLink> 
-                            <FooterLink to='/signin'>Solanart.io</FooterLink>
-                            <FooterLink to='/signin'>Margiceden.io</FooterLink>
-                            <FooterLink to='/signin'>Opensea.io</FooterLink>                  
+                            <FooterLink to='/'>Artentic.nft</FooterLink> 
+                            <FooterLink to='/'>Solanart.io</FooterLink>
+                            <FooterLink to='/'>Margiceden.io</FooterLink>
+                            <FooterLink to='/'>Opensea.io</FooterLink>                  
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Governance</FooterLinkTitle>
