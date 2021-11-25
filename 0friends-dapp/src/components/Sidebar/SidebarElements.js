@@ -96,7 +96,7 @@ export const SidebarWalletBtnRoute = styled(LinkR)`
 
     &:hover {
         background-position: right center;
-        color: ${COLORS.white2};
+        color: ${COLORS.black};
         box-shadow: 0 0 14px ${COLORS.secondary};
         text-decoration: none;
     } 

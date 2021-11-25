@@ -125,7 +125,7 @@ export const NavbarWalletBtnRoute = styled(LinkR)`
     display: block;
     white-space: nowrap;
     padding: 10px 22px;
-    font-size: 16px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -133,7 +133,7 @@ export const NavbarWalletBtnRoute = styled(LinkR)`
 
     &:hover {
         background-position: right center;
-        color: ${COLORS.white2};
+        color: ${COLORS.black};
         box-shadow: 0 0 14px ${COLORS.secondary};
         text-decoration: none;
     } 

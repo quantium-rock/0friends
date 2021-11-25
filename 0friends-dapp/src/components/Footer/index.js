@@ -49,9 +49,9 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/' onClick={toggleHome}>
-                            orus
+                            0friendsclub
                         </SocialLogo>
-                        <WebsiteRights>orus © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                        <WebsiteRights>0friendsclub © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href="//www.discord.com/" target="@0friendsclub" aria-label="Discord">
                                 <FaDiscord />

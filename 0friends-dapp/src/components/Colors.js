@@ -5,7 +5,6 @@ export const COLORS = {
     primary: "#01bf71",
     secondary: "#E55D87",
     tertiary: "#5FC3E4",
-    quartery: "#834380",
 
     // Basic
     white: "#fff",
