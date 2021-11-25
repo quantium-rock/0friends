@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
+import COLORS from '../Colors';
 
 export const Nav = styled.nav`
-    background: ${ ({scrollNav}) => ( scrollNav ? '#000' : 'transparent' ) };
+    background: ${ ({scrollNav}) => ( scrollNav ? COLORS.black : 'transparent' ) };
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -30,7 +31,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-    color: #fff;
+    color: ${COLORS.white};
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -52,7 +53,7 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #fff;
+        color: ${COLORS.white};
     }
 `;
 
@@ -69,11 +70,12 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-    height: 80px;    
+    height: 80px;  
 `;
 
 export const NavLinks = styled(LinkS)`
-    color: #fff;
+    color: ${COLORS.white};
+    font-size: 16px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -81,12 +83,25 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer;
 
+    &:hover {
+        font-size: 22px;
+        text-shadow: white 20px;
+        transition: 0.2s ease-in-out;
+    }
+
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid ${COLORS.primary};
+        border-image: 3px linear-gradient(90deg, ${COLORS.tertiary} 0%, ${COLORS.secondary} 50%, ${COLORS.primary} 80% );
+        background: -webkit-linear-gradient(180deg, ${COLORS.tertiary} 0%, ${COLORS.secondary} 50%, ${COLORS.primary} 80% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 22px;
+        text-shadow: white 20px;
+        transition: 0.2s ease-in-out;
     }
 `;
 
-export const NavBtn = styled.nav`
+export const NavbarWalletBtn = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,24 +109,32 @@ export const NavBtn = styled.nav`
     @media screen and (max-width: 768px) {
         display: none;
     }
-
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const NavbarWalletBtnRoute = styled(LinkR)`
+    background-image: linear-gradient(to right, ${COLORS.primary} 0%, ${COLORS.secondary}  51%, ${COLORS.tertiary}  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: ${COLORS.white};            
+    box-shadow: 0 0 7px ${COLORS.primary};
     border-radius: 50px;
-    background: #01bf71;
+    display: block;
     white-space: nowrap;
     padding: 10px 22px;
-    color: #010606;
-    font-size: 16 px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
-    }
+        background-position: right center;
+        color: ${COLORS.white2};
+        box-shadow: 0 0 14px ${COLORS.secondary};
+        text-decoration: none;
+    } 
 `;

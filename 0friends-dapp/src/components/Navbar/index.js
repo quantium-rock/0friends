@@ -2,22 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavbarWalletBtn, NavbarWalletBtnRoute  } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
-    
+
     const [ scrollNav, setScrollNav ] = useState(false) 
 
     const changeNav = () => {
         if( window.scrollY >= 80 ) {
-            setScrollNav(true)
+            setScrollNav(true);
         } else {
-            setScrollNav(false)
+            setScrollNav(false);
         }
     }
 
     useEffect( () => {
-        window.addEventListener('scroll', changeNav)
+        window.addEventListener('scroll', changeNav);
     }, []);
 
     const toggleHome = () => {
@@ -47,9 +47,9 @@ const Navbar = ({ toggle }) => {
                             <NavLinks to="roadmap" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Roadmap</NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <NavBtn>
-                        <NavBtnLink to="/connect">Connect Wallet</NavBtnLink>
-                    </NavBtn>
+                    <NavbarWalletBtn>
+                        <NavbarWalletBtnRoute to="/">Connect Wallet</NavbarWalletBtnRoute>
+                    </NavbarWalletBtn>
                 </NavbarContainer>
             </Nav>
         </IconContext.Provider>

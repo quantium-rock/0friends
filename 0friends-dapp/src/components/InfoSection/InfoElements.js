@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import COLORS from "../Colors";
 
 export const InfoContainer = styled.div`
-    color: #fff;
-    background: ${ ({lightBg}) => ( lightBg ? '#f9f9f9' : '#010606' ) };
+    color: ${COLORS.white};
+    background: ${ ({lightBg}) => ( lightBg ? COLORS.white2 : COLORS.black2 ) };
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -51,7 +52,9 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #01bf71;
+    background: -webkit-linear-gradient(180deg,${COLORS.tertiary}, ${COLORS.secondary}, ${COLORS.primary} );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -65,7 +68,7 @@ export const Heading = styled.h1`
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${ ({lightText}) => ( lightText ? '#f7f8fa' : '#010606' ) };
+    color: ${ ({lightText}) => ( lightText ? COLORS.white2 : COLORS.black2  ) };
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
@@ -77,7 +80,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${ ({lightTextDesc}) => ( lightTextDesc ? '#f7f8fa' : '#010606' ) };
+    color: ${ ({lightTextDesc}) => ( lightTextDesc ? COLORS.white2 : COLORS.black2  ) };
 `;
 
 export const BtnWrap = styled.div`

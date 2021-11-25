@@ -2,13 +2,14 @@ import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
+import COLORS from '../Colors';
 
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #0d0d0d;
+    background: ${COLORS.black2};
     display: grid;
     align-items: center;
     top: 0;
@@ -29,13 +30,12 @@ export const Icon = styled.div`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-    color: #fff;
+    color: ${COLORS.white};
 `;
 
 export const SidebarWrapper = styled.div`
-    color: #fff;
+    color: ${COLORS.white};
 `;
-
 
 export const SidebarMenu = styled.ul`
     display: grid;
@@ -58,38 +58,46 @@ export const SidebarLink = styled(LinkS)`
     list-style: none;
     transition: 0.2s ease-in-out;
     text-decoration: none;
-    color: #fff;
+    color: ${COLORS.white};
     cursor: pointer;
 
     &:hover {
-        color: #01bf71;
+        color: ${COLORS.black};
+        background-image: linear-gradient(to right, ${COLORS.primary} 0%, ${COLORS.secondary}  51%, ${COLORS.tertiary}  100%);
         transition: 0.2s ease-in-out;
     }
 `;
 
-export const SideBtnWrap = styled.div`
+export const SidebarWalletBtn = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15%;
 `;
 
-export const SidebarRoute = styled(LinkR)`
+export const SidebarWalletBtnRoute = styled(LinkR)`
+    background-image: linear-gradient(to right, ${COLORS.primary} 0%, ${COLORS.secondary}  51%, ${COLORS.tertiary}  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: ${COLORS.white};            
+    box-shadow: 0 0 7px ${COLORS.primary};
     border-radius: 50px;
-    background: #01bf71;
+    display: block;
     white-space: nowrap;
-    padding: 16px 64px;
-    color: #010606;
-    font-size: 16px;
-    outline: none;
+    font-size: 18px;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
-    }
+        background-position: right center;
+        color: ${COLORS.white2};
+        box-shadow: 0 0 14px ${COLORS.secondary};
+        text-decoration: none;
+    } 
 `;

@@ -4,7 +4,6 @@ import Sidebar from '../components/Sidebar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import { About, Rarities, Gamearn, Roadmap } from '../components/InfoSection/Data';
-import SecNewListed from '../components/SecNewListed';
 import Footer from '../components/Footer';
 
 const Home = () => {
