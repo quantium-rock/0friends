@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
-import Video from '../../videos/video.mp4';
+import { HeroContainer, HeroBg, VideoBg, HeroContent, Column1, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Column2, Column3 } from './HeroElements';
+import Video from '../../videos/video8.mp4';
 import { Button } from '../Buttons';
+import Countdown from './Countdown';
+import { FaDiscord, FaTwitter, FaReddit, FaInstagram } from 'react-icons/fa';
+import { InfoRow, SocialMedia, SocialMediaWrap, SocialIcons,  SocialIconLink, InfoWrapper } from './HeroElements';
+import Card from '../CardComponent/CardComponent.tsx';
 
 function HeroSection() {
 
@@ -16,19 +20,53 @@ function HeroSection() {
             <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
-        
             <HeroContent>
-                <HeroH1> 0friendsclub </HeroH1>
-                <HeroP>
-                    Connect your wallet and start generating profits now
-                </HeroP>
-                <HeroBtnWrapper>
-                    <Button to="services" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
-                        Get started { hover ? <ArrowForward /> : <ArrowRight /> }
-                    </Button>
-                </HeroBtnWrapper>
+                <InfoRow>
+                <Column1>
+                    <TextWrapper>
+                        <TopLine>CHERRY SOLANA MINTING</TopLine>
+                        <Heading>NEW CHERRY COLLECTION</Heading>
+                        <Subtitle>3,728 NFTs & 3,728 PLAYING TOKENS</Subtitle>
+                        <Countdown date={Date.now() + 10000} />
+                        <SocialMedia>
+                            <SocialMediaWrap>
+                                <SocialIcons>
+                                    <SocialIconLink href="//www.discord.com/" target="@0friendsclub" aria-label="Discord">
+                                        <FaDiscord />
+                                    </SocialIconLink>
+                                    <SocialIconLink href="//www.twitter.com/" target="@0friendsclub" aria-label="Twitter">
+                                        <FaTwitter />
+                                    </SocialIconLink>
+                                    <SocialIconLink href="//www.reddit.com/" target="_blank" aria-label="Reddit">
+                                        <FaReddit />
+                                    </SocialIconLink>
+                                    <SocialIconLink href="//www.instagram.com/" target="_blank" aria-label="Instagram">
+                                        <FaInstagram />
+                                    </SocialIconLink>
+                                </SocialIcons>
+                            </SocialMediaWrap>
+                        </SocialMedia>
+                        
+                            <BtnWrap>
+                                <Button to='home' smooth={true} duration={500} spy={true} exact="true" offset={-80} >MINT NOW!</Button>
+                            </BtnWrap> 
+                  
+                    </TextWrapper>
+                </Column1>
+                <Column2>
+                    <InfoWrapper>
+                        <Card />
+                    </InfoWrapper>
+                </Column2>
+                <Column3>
+                    <InfoWrapper>
+                    <Card />
+                    </InfoWrapper>
+                </Column3>
+                </InfoRow>
             </HeroContent>
-        </HeroContainer>
+            
+     </HeroContainer>
     );
 };
 

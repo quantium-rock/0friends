@@ -1,0 +1,201 @@
+.card {
+  position: relative;
+  rotate: 90deg ;
+}
+
+.card-container {
+  width: 285px;
+  min-height: 400px;
+  position: relative;
+  background-color: black;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 10px;
+  box-shadow: -2px 2px 46px 22px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: -2px 2px 46px 22px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: -2px 2px 46px 22px rgba(255, 255, 255, 0.6);
+  transition: 0.5s ease;
+
+}
+.hover-point {
+  position: absolute;
+  z-index: 2;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  cursor: pointer;
+}
+.hover-point:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.hover-point:nth-child(2) {
+  top: 0;
+  left: calc(100% / 3);
+}
+.hover-point:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+.hover-point:nth-child(4) {
+  top: calc(100% / 3);
+  left: 0;
+}
+.hover-point:nth-child(5) {
+  top: calc(100% / 3);
+  right: 0;
+}
+.hover-point:nth-child(6) {
+  bottom: 0;
+  left: 0;
+}
+.hover-point:nth-child(7) {
+  bottom: 0;
+  left: calc(100% / 3);
+}
+.hover-point:nth-child(8) {
+  bottom: 0;
+  right: 0;
+}
+.hover-point:nth-child(1):hover ~ .box-contents {
+  background-color: red;
+  box-shadow: 15px 15px 50px blue;
+  transform-origin: right top;
+  transform: perspective(1200px) rotateY(7deg);
+}
+.hover-point:nth-child(2):hover ~ .box-contents {
+  background-color: yellow;
+  box-shadow: 0 15px 50px purple;
+  transform-origin: center top;
+  transform: perspective(1200px) rotateX(7deg);
+}
+.hover-point:nth-child(3):hover ~ .box-contents {
+  background-color: blue;
+  box-shadow: -15px 15px 50px yellow;
+  transform-origin: left top;
+  transform: perspective(1200px) rotateY(-7deg);
+}
+.hover-point:nth-child(4):hover ~ .box-contents {
+  background-color: green;
+  box-shadow: 20px 20px 20px purple;
+  transform-origin: center top;
+  transform: perspective(1200px) rotateX(7deg);
+}
+.hover-point:nth-child(5):hover ~ .box-contents {
+  background-color: purple;
+  box-shadow: -15px 5px 50px green;
+  transform-origin: right center;
+  transform: perspective(1200px) rotateY(7deg);
+}
+.hover-point:nth-child(6):hover ~ .box-contents {
+  background-color: orange;
+  box-shadow: 15px -15px 50px red;
+  transform-origin: left bottom;
+  transform: perspective(1200px) rotateX(-7deg);
+}
+.hover-point:nth-child(7):hover ~ .box-contents {
+  background-color: aqua;
+  box-shadow: 0 -15px 50px magenta;
+  transform-origin: center bottom;
+  transform: perspective(1200px) rotateY(-10deg);
+}
+.hover-point:nth-child(8):hover ~ .box-contents {
+  background-color: magenta;
+  box-shadow: -15px -15px 50px orange;
+  transform-origin: left bottom;
+  transform: perspective(1200px) rotateY(-10deg);
+}
+
+.card-image {
+  width: 270px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-content {
+  width: 270px;
+  text-align: left;
+  margin: 20px;
+}
+
+.card-title {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  font-style: italic;
+
+}
+
+.card-title:hover {
+  color: aqua;
+}
+
+.card-description {
+  color: var(--text-blue);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-text {
+  color: rgb(255, 255, 255);
+  margin-left: 6px;
+  font-weight: bold;
+}
+
+.time-text {
+  color: var(--text-blue);
+  margin-left: 6px;
+}
+
+.details-container {
+  display: flex;
+  align-items: center;
+  width: 40px;
+}
+
+.card-details-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-separator {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: rgb(50, 64, 90); /* old IE */
+  background-color: rgb(50, 64, 90); /* Modern Browsers */
+  margin: 22px 0px;
+}
+
+.creator-image {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.creator-details-container {
+  display: flex;
+  align-items: center;
+}
+
+.creator-details-text {
+  margin-left: 15px;
+}
+
+.creator-details-first-text {
+  color: var(--text-blue);
+}
+
+.creator-details-last-text {
+  color: #ffffff;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.creator-details-last-text:hover {
+  color: aqua;
+}

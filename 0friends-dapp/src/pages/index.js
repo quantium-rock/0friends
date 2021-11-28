@@ -6,6 +6,7 @@ import InfoSection from '../components/InfoSection';
 import { About, Rarities, Gamearn, Roadmap } from '../components/InfoSection/Data';
 import Footer from '../components/Footer';
 
+
 const Home = () => {
 
     const [ isOpen, setIsOpen ] = useState(false);

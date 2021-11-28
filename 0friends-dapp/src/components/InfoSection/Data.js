@@ -1,7 +1,7 @@
-import img1 from '../../images/svg-1.svg';
-import img2 from '../../images/svg-2.svg';
-import img3 from '../../images/svg-3.svg';
-import img4 from '../../images/svg-4.svg';
+import img1 from '../../images/0.png';
+import img2 from '../../images/1.png';
+import img3 from '../../images/1.png';
+import img4 from '../../images/2.png';
 
 export const About = {
     id: 'about',

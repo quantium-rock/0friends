@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavbarWalletBtn, NavbarWalletBtnRoute  } from './NavbarElements';
+import { Nav, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks, NavbarWalletBtn, NavbarWalletBtnRoute, ImgWrap, Img } from './NavbarElements';
+import img from '../../assets/img/logo-ct.png'
 
 const Navbar = ({ toggle }) => {
 
@@ -29,7 +30,9 @@ const Navbar = ({ toggle }) => {
         <IconContext.Provider value={{color:'#fff'}}>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to="/" onClick={toggleHome}>0friendsclub</NavLogo>
+                    <ImgWrap to="/" onClick={toggleHome}>
+                        <Img src={img} alt={''}/>
+                    </ImgWrap>
                     <MobileIcon onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>

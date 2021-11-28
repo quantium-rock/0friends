@@ -2,9 +2,9 @@
 export const COLORS = {
 
     // Main
-    primary: "#01bf71",
-    secondary: "#E55D87",
-    tertiary: "#5FC3E4",
+    primary: "#6CFF66",
+    secondary: "#FFE839",
+    tertiary: "#FF1500", //"#5FC3E4"
 
     // Basic
     white: "#fff",
