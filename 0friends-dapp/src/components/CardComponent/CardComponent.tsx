@@ -1,13 +1,11 @@
-
 import "./CardComponent.css";
 import RarityLevel from "./RarityLevel";
-import { Image, Name, Habitat, Skin, Outfit } from "./CardContents";
+import { Image, Name, Habitat, Skin, Outfit, iconHabitat, iconSkin, iconOutfit } from "./CardContents";
 
 export default function CardComponent() {
     
     function renderCards() {
-        
-
+    
         return (
             <div className="card-container box-contents">
                 <div className="card-image-container">
@@ -17,29 +15,22 @@ export default function CardComponent() {
                     <h1 className="card-title">{Name}</h1>
                     <RarityLevel/>
                     <hr className="card-separator" />
-                    <div className="creator-details-container">
-                        <div className="creator-details-text">
-                            <span className="creator-details-first-text">HABITAT: </span>
-                            <img src="images/image-avatar.png" alt="author" className="creator-image" />
-                            <span className="creator-details-last-text">{Habitat}</span>
-                        </div>
+                    <div className="rarity-container">                           
+                        <span className="rarity-text">HABITAT: </span>
+                        <img src={iconHabitat} alt="habitatIcon" className="rarity-image" />
+                        <span className="rarity-text">{Habitat}</span>
                     </div>
-                    <div className="creator-details-container">
-                        <div className="creator-details-text">
-                            <span className="creator-details-first-text">SKIN: </span>
-                            <img src="images/image-avatar.png" alt="author" className="creator-image" />
-                            <span className="creator-details-last-text">{Skin}</span>
-                        </div>
+                    <div className="rarity-container">  
+                        <span className="rarity-text">SKIN: </span>
+                        <img src={iconSkin} alt="author" className="rarity-image" />
+                        <span className="rarity-text">{Skin}</span>
                     </div>
-                    <div className="creator-details-container">
-                        <div className="creator-details-text">
-                            <span className="creator-details-first-text">OUTFIT: </span>
-                            <img src="images/image-avatar.png" alt="author" className="creator-image" />
-                            <span className="creator-details-last-text">{Outfit}</span>
-                        </div>
+                    <div className="rarity-container">  
+                        <div className="rarity-text">OUTFIT: </div>
+                        <img src={iconOutfit} alt="author" className="rarity-image" />
+                        <span className="rarity-text">{Outfit}</span>
                     </div>
                     <hr className="card-separator" />
-
                     <div className="card-details-container">
                         <div className="details-container">
                             <img src="images/solana-sol-logo.svg" alt="currency icon" />

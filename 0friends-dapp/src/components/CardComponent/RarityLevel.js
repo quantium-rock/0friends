@@ -1,8 +1,9 @@
 import React from "react";
+import rarityLevel from "./CardContents";
 
 const ProgressBar = (props) => {
 
-    const { bgcolor = 'red', completed = '60' } = props;
+    const { bgcolor = 'purple', completed = rarityLevel } = props;
   
     const containerStyles = {
       height: 12,
@@ -32,7 +33,7 @@ const ProgressBar = (props) => {
     return (
       <div style={containerStyles}>
         <div style={fillerStyles}>
-          <span style={labelStyles}>{`${completed}%`}</span>
+          <span style={labelStyles}>{`${completed}% Rarity`}</span>
         </div>
       </div>
     );

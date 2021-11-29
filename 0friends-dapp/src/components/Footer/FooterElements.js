@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import COLORS from '../Colors';
 
 export const FooterContainer = styled.footer`
-    background-color: ${COLORS.grey2};
+    background-color: ${COLORS.grey};
 `;
 
 export const FooterWrap = styled.div`

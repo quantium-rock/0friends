@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Countdown from 'react-countdown-now';
 import styled from 'styled-components';
 
 const PurpleCount = styled.div`

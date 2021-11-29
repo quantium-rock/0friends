@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, Column1, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Column2, Column3 } from './HeroElements';
 import Video from '../../videos/video8.mp4';
 import { Button } from '../Buttons';
-import Countdown from './Countdown';
 import { FaDiscord, FaTwitter, FaReddit, FaInstagram } from 'react-icons/fa';
 import { InfoRow, SocialMedia, SocialMediaWrap, SocialIcons,  SocialIconLink, InfoWrapper } from './HeroElements';
 import Card from '../CardComponent/CardComponent.tsx';
