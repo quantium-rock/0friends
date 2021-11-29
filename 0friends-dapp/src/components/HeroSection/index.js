@@ -27,7 +27,7 @@ function HeroSection() {
                         <TopLine>CHERRY SOLANA MINTING</TopLine>
                         <Heading>NEW CHERRY COLLECTION</Heading>
                         <Subtitle>3,728 NFTs & 3,728 PLAYING TOKENS</Subtitle>
-                        <Countdown date={Date.now() + 10000} />
+                        
                         <SocialMedia>
                             <SocialMediaWrap>
                                 <SocialIcons>

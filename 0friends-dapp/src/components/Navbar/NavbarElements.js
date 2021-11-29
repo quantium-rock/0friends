@@ -53,7 +53,7 @@ export const ImgWrap = styled(LinkR)`
 `;
 
 export const Img = styled.img`
-    width: 55%;
+    height: 30px;
 
     &:hover {
         width: 57%;
@@ -153,6 +153,7 @@ export const NavbarWalletBtnRoute = styled(LinkR)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     font-weight: bold;
+
 
     &:hover {
         font-size: 16px;

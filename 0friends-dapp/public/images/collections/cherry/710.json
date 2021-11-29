@@ -1,0 +1,50 @@
+{
+  "name": "cherry #710",
+  "symbol": "0fc",
+  "description": "0 friends club - cherry collection",
+  "edition": 710,
+  "image": "710.png",
+  "external_url": "0friendsclub.nft",
+  "twitter": "@0friendsclub",
+  "discord": "#0friendsclub",
+  "attributes": [
+    {
+      "trait_type": "0friend",
+      "value": "cherry#10"
+    },
+    {
+      "trait_type": "card",
+      "value": "sea#55"
+    },
+    {
+      "trait_type": "skin",
+      "value": "yellow#55"
+    },
+    {
+      "trait_type": "outfit",
+      "value": "solana#33"
+    }
+  ],
+  "dna": "f0ac984ae278f47f42b168ac4d4b92ac9413eb62",
+  "properties": {
+    "files": [
+      {
+        "uri": "710.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "FywjUkDvnUgUCAXPgjbmAmEap6R8oNdHhBxNiLnEeK4K",
+        "share": 70
+      },
+      {
+        "address": "FywjUkDvnUgUCAXPgjbmAmEap6R8oNdHhBxNiLnEeK4K",
+        "share": 30
+      }
+    ]
+  },
+  "seller_fee_basis_points": 1500,
+  "compiler": "0friendsclub.nft"
+}

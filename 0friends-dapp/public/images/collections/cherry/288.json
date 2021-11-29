@@ -1,0 +1,50 @@
+{
+  "name": "cherry #288",
+  "symbol": "0fc",
+  "description": "0 friends club - cherry collection",
+  "edition": 288,
+  "image": "288.png",
+  "external_url": "0friendsclub.nft",
+  "twitter": "@0friendsclub",
+  "discord": "#0friendsclub",
+  "attributes": [
+    {
+      "trait_type": "0friend",
+      "value": "cherry#10"
+    },
+    {
+      "trait_type": "card",
+      "value": "sea#55"
+    },
+    {
+      "trait_type": "skin",
+      "value": "origin#11"
+    },
+    {
+      "trait_type": "outfit",
+      "value": "princess#55"
+    }
+  ],
+  "dna": "f0800c22232b3346c23a9e51c5b59498c46fae9c",
+  "properties": {
+    "files": [
+      {
+        "uri": "288.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "FywjUkDvnUgUCAXPgjbmAmEap6R8oNdHhBxNiLnEeK4K",
+        "share": 70
+      },
+      {
+        "address": "FywjUkDvnUgUCAXPgjbmAmEap6R8oNdHhBxNiLnEeK4K",
+        "share": 30
+      }
+    ]
+  },
+  "seller_fee_basis_points": 1500,
+  "compiler": "0friendsclub.nft"
+}
